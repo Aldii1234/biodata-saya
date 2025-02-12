@@ -1,0 +1,40 @@
+/* Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Tabel untuk Desktop */
+.desktop-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.desktop-table th, .desktop-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Grid untuk Mobile */
+.mobile-grid {
+    display: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mobile-grid div {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1023px) {
+    .desktop-table {
+        display: none;
+    }
+    .mobile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
